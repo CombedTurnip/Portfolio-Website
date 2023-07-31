@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
-    
+        <link href="./resources/css/style.css" type="text/css" rel="stylesheet"> 
+        <script type="text/javascript" src="./Resources/JS/webint.js"></script> <!--interactivity js link-->
+        <script src="https://kit.fontawesome.com/6e2e51bc01.js" crossorigin="anonymous"></script> <!--font-awesome link-->
         <title>Portfolio: Liam Dee</title>
 
     </head>
@@ -11,8 +12,19 @@
             <!--static bar with dropdown nav element-->
             <h1>Liam Dee</h1>
             <nav>
-
+                <a href="index.html">About Me</a>
+                <div class="dropdown" >
+                    <button class="dropbtn" onclick="">Projects
+                    <i class="downarrow"></i></button><!--onclick for js click for dropdown. or use css for hover dropdown. i element for arrow-->
+                    <div id="projects-dropdown" class="dropdown-content">
+                        <a href="./project1.html">Project 1</a>
+                        <a href="./project2.html">Project 2</a>
+                        <a href="./project3.html">Project 3</a>
+                    </div>
+                </div>
+                <a href="contact.html">Contact Me</a>
             </nav>
+            
         </header>
         
         <main>
@@ -20,26 +32,42 @@
             <div id="aboutMe">
             <!--about me section-->
                 <h2>About Me</h2>
-                <p>All about me</p>
+                <p>Hi my name is Liam and I am learning to code! Welcome to my portfolio website.<br>I am studying to become a full-stack engineer via Codecademy's Pro Career Path course and this is where I'll be showcasing my new skills as I develop them.</p>
+                <p>I've been working on the HTML, CSS, and JavaScript languages so far and I will be putting them to use with my new knowledge of Git and GitHub across my projects.</p>
+                <p>I am also working part-time with an online business utilising ChatGPT for content creation and performing user experience analysis of their website with Microsoft Clarity and Hotjar.</p>
+                <p>In my free time I like to play Warhammer, read books, and go bouldering - although not all at the same time!</p>
                 <img src="">
+            </div>
+
+            <div id="projects">
+            <!--projects section will utilise flexbox with cards for each project-->
+                <h2>Projects</h2>
+                <div class="project-cards">
+                    <div class="projectCard">
+                        <h3>Project 1</h3>
+                        <img src="">
+                    </div>
+                    <div class="projectCard">
+                        <h3>Project 2</h3>
+                        <img src="">
+                    </div>
+                    <div class="projectCard">
+                        <h3>Project 3</h3>
+                        <img src="">
+                    </div>
+                </div>
             </div>
 
             <div id="skills">
             <!--skills section-->
                 <h2>Skills</h2>
-                <p></p>
-            </div>
-
-            <div id="projects">
-            <!--projects section:0 will utilise flexbox-->
-                <h2>Projects</h2>
-                <div class="projectCard"></div>
+                <div id="skills-container"><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-js"></i><i class="fa-brands fa-git"></i><i class="fa-brands fa-github"></i></div>
             </div>
 
         </main>
 
         <footer>
-            <!--maybe a logo/img with link to contact page-->
+            
         </footer>
     </body>
 </html>
