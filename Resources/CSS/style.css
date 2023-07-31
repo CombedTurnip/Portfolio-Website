@@ -1,0 +1,30 @@
+/*universal rules*/
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&family=Special+Elite&display=swap');
+    /*fonts are: 
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Cutive Mono', monospace;
+    font-family: 'Special Elite', cursive;*/
+
+html {
+    font-size: 16px;
+    font-family: 'Courier Prime', monospace;
+}
+
+body {
+    margin: 0px;
+}
+
+/*Title banner*/
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #000000;
+    top: 0;
+    text-align:center;
+}
+
+.heading {
+    color: #ffffff;
+    
+}
