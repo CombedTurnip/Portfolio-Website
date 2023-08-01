@@ -12,16 +12,26 @@ html {
 
 body {
     margin: 0px;
+    background-color: #dddddd;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
-    color: #adaaaa;
+    color:#000000;
     font-weight: 700;
     text-decoration: none;
 }
 
 a:hover {
     color: #ff0000;
+}
+
+footer {
+    margin-top:10.125rem;
+    position:relative;
+    text-align:center;
+    background-color:#a3a3a3
 }
 
 /*Title banner*/
@@ -32,12 +42,11 @@ header {
     background-color: #000000;
     top: 0;
     text-align:center;
-    /*display: flex;
-    align-items: center;*/
+    height: 6.18rem;
 }
 
 .heading {
-    color: #ffffff;
+    color: #eeeeee;
 
 }
 
@@ -50,6 +59,7 @@ nav {
 
 .nav-link {
     width:10%;
+    color: #adaaaa;
 }
 
 
@@ -92,4 +102,93 @@ nav {
 /*to show the dropdown menu, js adds this class*/
 .show {
     display:block;
+}
+
+.dropdown-content .nav-link {
+    margin: 1rem;
+}
+
+/*main element*/
+.main-content {
+    position: relative;
+    top:10.125rem;
+    padding: 0 2rem 0 2rem;
+    
+}
+
+/*about me*/
+#about-me {
+    padding-bottom: 3rem;
+    margin-bottom: 3.945rem;
+    border-width: 0 0 0.2rem 0;
+    border-style:solid;
+    border-color: #a3a3a3;
+}
+.about-me-container {
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.about-me-container .art-text {
+    max-width:70%;
+}
+
+#portrait {
+    max-height:20rem;
+    max-width:20rem;
+    padding-right: 7rem;
+}
+
+/*projects*/
+#projects {
+    padding-bottom: 3rem;
+    margin-bottom: 3.945rem;
+    border-width: 0 0 0.2rem 0;
+    border-style:solid;
+    border-color: #a3a3a3;
+}
+
+.project-cards {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.project-card {
+    width: 20rem;
+    border-style: solid;
+    border-width: 0.1rem 0.1rem 0.1rem 0.1rem;
+    border-color: #a3a3a3;
+    padding: 1rem 0 1rem 0;
+    cursor:pointer;
+}
+
+.project-card:hover {
+    border-color:#ff0000;
+    color:#ff0000;
+    box-shadow: 1rem 1rem #a3a3a3;
+
+}
+
+.project-image {
+    max-width: 16rem;
+}
+
+/*skills*/
+#skills {
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+    /*border-width: 0 0 0.2rem 0;
+    border-style:solid;
+    border-color: #a3a3a3;*/
+}
+
+#skills-container {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    font-size:2rem;
 }
