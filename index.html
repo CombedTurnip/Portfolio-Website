@@ -7,7 +7,7 @@
         <title>Portfolio: Liam Dee</title>
 
     </head>
-    <body>
+    <body id="body">
         <header>
             <!--static bar with dropdown nav element-->
             <h1 class="heading">Liam Dee</h1>
@@ -24,10 +24,10 @@
                 </div>
                 <a class ="nav-link" href="contact.html">Contact Me</a>
             </nav>
-            
+            <div class="button-div"><button id="dark-mode-btn" onclick="darkMode()"><i id="sun-moon" class="fa-regular fa-moon"></i></button></div>
         </header>
         
-        <main class="main-content">
+        <main id="main-content">
             
             <div id="about-me" class="content-container">
             <!--about me section-->
@@ -53,17 +53,13 @@
                             <h3>Project 1</h3>
                             <img class="project-image" src="./Resources/media/dice.jpg">
                     </div>
-                    <div class="project-card">
-                        <a href="./project2.html"> 
+                    <div class="project-card" onclick="project2Link()"> 
                             <h3>Project 2</h3>
                             <img class="project-image" src="./Resources/media/calculator.jpg">
-                        </a>
                     </div>
-                    <div class="project-card">
-                        <a href="./project3.html">
+                    <div class="project-card" onclick="project3Link()">
                             <h3>Project 3</h3>
                             <img class="project-image" src="./Resources/media/dog.jpg">
-                        </a>
                     </div>
                 </div>
             </div>
