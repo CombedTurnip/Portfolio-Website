@@ -7,6 +7,9 @@
 function showDropdown() {
     document.getElementById("projects-dropdown").classList.toggle("show");
 };
+
+
+
 //When user clicks elsewhere close the menu
 window.onclick = function(event) {
     if(!event.target.matches('.dropbtn')) {
@@ -19,4 +22,17 @@ window.onclick = function(event) {
             }
         }
     }
+};
+
+//Links for project cards
+let project1Link = () => {
+    window.location = ('./project1.html');
+};
+
+let project2Link = () => {
+    window.location = ('./project2.html');
+};
+
+let project3Link = () => {
+    window.location = ('./project3.html');
 };
