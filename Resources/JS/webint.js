@@ -1,6 +1,11 @@
 
-
-
+/*dark mode toggle button*/
+let darkMode = () => {
+    document.getElementById("body").classList.toggle('dark-mode');
+    document.getElementById('sun-moon').classList.toggle('fa-moon');
+    document.getElementById('sun-moon').classList.toggle('fa-sun');
+    
+};
 
 /* Dropdown nav element button*/
 //When user clicks the button show the dropdown content
