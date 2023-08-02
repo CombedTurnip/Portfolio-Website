@@ -20,6 +20,7 @@ body {
     position:relative;
     min-height:100vh;
     box-sizing:border-box;
+    width:auto;
 }
 
 a {
@@ -70,6 +71,7 @@ header {
     z-index: 1;
     background-color: #000000;
     top: 0;
+    right:0;
     text-align:center;
     height: 6.18rem;
 }
@@ -85,9 +87,10 @@ nav {
 }
 
 .nav-link {
-    width:10%;
+    width:20%;
     color: #adaaaa;
     font-weight:700;
+    margin:0 1rem 0 1rem;
 }
 
 .button-div {
@@ -128,9 +131,10 @@ nav {
 
 /*container <div> to position dropdown content*/
 .dropdown {
-    width:10%;
+    width:20%;
     position:relative;
     display:inline-block;
+    margin:0 1rem 0 1rem;
 }
 
 /*dropdown content is hidden by default*/
@@ -229,4 +233,20 @@ nav {
 /*contact page*/
 #contact-list {
     line-height: 2rem;
+}
+
+/*responsive design for tablet screens*/
+@media only screen and (max-width: 768px) {
+    
+    #about-me-flex {
+        align-items: center;
+
+    }
+
+    #portrait {
+        max-height: 20rem;
+        max-width: 20rem;
+        padding: 0 3rem 0 3rem;
+    }
+
 }
