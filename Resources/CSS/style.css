@@ -18,8 +18,10 @@ body {
     display: flex;
     flex-direction: column;
     position:relative;
+    right:0px; /*fixed issue with allignment on tablet screen, but not mobile screen. maybe a flex issue?*/
     min-height:100vh;
     box-sizing:border-box;
+    width:100vw;
 }
 
 a {
@@ -70,6 +72,7 @@ header {
     z-index: 1;
     background-color: #000000;
     top: 0;
+    right:0;
     text-align:center;
     height: 6.18rem;
 }
@@ -85,9 +88,10 @@ nav {
 }
 
 .nav-link {
-    width:10%;
+    width:20%;
     color: #adaaaa;
     font-weight:700;
+    margin:0 1rem 0 1rem;
 }
 
 .button-div {
@@ -128,9 +132,10 @@ nav {
 
 /*container <div> to position dropdown content*/
 .dropdown {
-    width:10%;
+    width:20%;
     position:relative;
     display:inline-block;
+    margin:0 1rem 0 1rem;
 }
 
 /*dropdown content is hidden by default*/
@@ -186,7 +191,11 @@ nav {
     max-height:20rem;
     max-width:20rem;
     padding:0 7rem 0 7rem;
-    
+}
+
+#about-me-flex {
+    align-items: center;
+
 }
 
 /*projects*/
@@ -229,4 +238,41 @@ nav {
 /*contact page*/
 #contact-list {
     line-height: 2rem;
+}
+
+/*responsive design for small laptops*/
+@media only screen and (max-width: 1024px) {
+    .project-cards {
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .project-card {
+        margin: 1rem 0 1rem 0;
+        box-sizing:border-box;
+        height:22.03rem; 
+    }
+
+    .project-image {
+        max-height:16rem;
+    }
+}
+
+
+/*responsive design for tablet screens*/
+@media only screen and (max-width: 768px) {
+
+    #portrait {
+        max-width: 20rem;
+        padding: 0 3rem 0 3rem;
+    }
+
+}
+
+/*responsive design for mobile screens*/
+@media only screen and (max-width:425px) {
+    body {
+        right: 0px;
+    }
 }
